@@ -1,0 +1,48 @@
+
+Birden fazla futbol takımı ve bu takımlara ait oyuncuların kaydedilebildiği, listelenebildiği, 
+güncellenebildiği ve silinebileceği spring boot servisleri geliştirmeniz beklenmektedir.
+
+Uygulamaya ait fonksiyonel özellikler aşağıdaki gibi olmalıdır.
+1. Futbol takımlarının listelendiği bir servis
+2. Seçilen bir futbol takımının ID'si ile o futbol takımına ait futbolcuların listelenmesi
+3. Seçilen bir futbol takımına ait ID ile futbol takımının silinmesi veya güncellenmesi
+4. Seçilen futbol tabkımına ait futbolcuların silinmesi veya yeni bir futbolcunun eklenmesi
+
+Kurallar
+1. Bir futbol takımında en fazla 18 oyuncu tanımlanabilir.
+2. Bir takıma ait futbolculardan en fazla 6'sı yabancı olabilir.
+3. En fazla 2 kaleci tanımlanabilir.
+
+Uygulama geliştirilmesi için kullanılacak teknolojiler
+1. Spring boot
+2. İsterseniz opsiyonel olarak MySQL, PostgreSQL veya MongoDB benzeri veritabanlarını kullanabilirsiniz. (zorunlu değildir)
+3. Kayıt oluşturma ve güncelleme servisleri JSON formatında data almalı
+4. Kayıt silme servisleri URL üzerinden gönderilecek ID ile yapılmalı
+
+Model bilgileri
+1. Futbol Takımı
+	a) Adı
+	b) Ligi (Süper, 1. Lig, 2. Lig, 3. Lig, Amatör Lig)
+	c) Takım logosuna ait url bilgisi
+	d) Takımın bulunduğu şehir
+	e) Takımın kurulduğu yıl
+	f) Takımın renkleri
+	
+2. Futbolcu
+	a) Adı
+	b) Soyadı
+	c) Oynadığı pozisyon (Kaleci, Defans, Orta saha, Stoper, Forvet, Diğer)
+	d) Milliyeti (Yerli, Yabancı)
+	e) Forma numarası
+	
+Faydalanabileceğiniz Kaynaklar
+1. https://start.spring.io/
+2. https://spring.io/quickstart
+3. https://www.tutorialspoint.com/spring/index.htm
+4. https://spring.io/guides/gs/accessing-data-mongodb/
+5. https://mkyong.com/spring-boot/spring-boot-spring-data-mongodb-example/
+6. https://spring.io/guides/gs/accessing-data-mysql/
+7. https://dzone.com/articles/build-a-simple-crud-app-using-spring-boot-mysql-an
+8. https://www.baeldung.com/java-connect-mysql
+
+	
